@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -N fat10_gpu_equil
+#PBS -l select=1:ncpus=4:ngpus=1:mem=8gb
+#PBS -l walltime=24:00:00
+#PBS -o fat10_gpu_equil.log
+#PBS -e fat10_gpu_equil.err
+
+cd $PBS_O_WORKDIR
+
+module load Amber
+
+#gamd equilibration
+pmemd.cuda -O -i md_prep.in -p ../1_prepare_struct/fat10hmr.prmtop -c ../3_initial_cmd/fat10.rst7 -o fat10_md-1.out -x fat10_md-1.nc -r fat10_md-1.rst7 -gamd fat10_md-1.log

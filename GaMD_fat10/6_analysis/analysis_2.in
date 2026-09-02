@@ -1,0 +1,183 @@
+# Load topology
+parm ../1_prepare_struct/dryhmr.prmtop
+
+# ==================== Replica 1 ====================
+trajin ../5_gamd_prod/rep1/trajectories/seg1.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg2.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg3.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg4.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg5.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg6.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg7.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg8.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg9.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg10.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg11.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg12.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg13.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg14.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg15.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg16.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg17.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg18.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg19.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg20.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg21.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg22.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg23.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg24.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg25.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg26.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg27.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg28.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg29.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg30.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg31.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg32.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg33.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg34.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg35.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg36.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg37.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg38.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg39.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg40.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg41.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg42.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg43.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg44.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg45.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg46.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg47.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg48.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg49.nc
+trajin ../5_gamd_prod/rep1/trajectories/seg50.nc
+
+# ---- Analysis 3: Radius of Gyration (rep1) ----
+radgyr out structural/rog_rep1.dat mass nomax
+# ---- Analysis 4: Solvent Accessible Surface Area (rep1) ----
+surf :1-165 out structural/surf_rep1.dat
+
+run
+clear trajin
+
+# ==================== Replica 2 ====================
+trajin ../5_gamd_prod/rep2/trajectories/seg1.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg2.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg3.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg4.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg5.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg6.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg7.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg8.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg9.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg10.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg11.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg12.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg13.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg14.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg15.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg16.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg17.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg18.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg19.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg20.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg21.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg22.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg23.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg24.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg25.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg26.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg27.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg28.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg29.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg30.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg31.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg32.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg33.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg34.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg35.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg36.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg37.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg38.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg39.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg40.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg41.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg42.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg43.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg44.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg45.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg46.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg47.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg48.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg49.nc
+trajin ../5_gamd_prod/rep2/trajectories/seg50.nc
+
+# ---- Analysis 3: Radius of Gyration (rep2) ----
+radgyr out structural/rog_rep2.dat mass nomax
+# ---- Analysis 4: Solvent Accessible Surface Area (rep2) ----
+surf :1-165 out structural/surf_rep2.dat
+
+run
+clear trajin
+
+# ==================== Replica 3 ====================
+trajin ../5_gamd_prod/rep3/trajectories/seg1.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg2.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg3.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg4.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg5.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg6.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg7.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg8.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg9.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg10.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg11.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg12.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg13.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg14.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg15.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg16.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg17.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg18.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg19.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg20.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg21.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg22.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg23.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg24.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg25.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg26.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg27.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg28.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg29.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg30.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg31.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg32.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg33.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg34.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg35.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg36.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg37.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg38.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg39.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg40.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg41.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg42.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg43.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg44.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg45.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg46.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg47.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg48.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg49.nc
+trajin ../5_gamd_prod/rep3/trajectories/seg50.nc
+
+# ---- Analysis 3: Radius of Gyration (rep3) ----
+radgyr out structural/rog_rep3.dat mass nomax
+# ---- Analysis 4: Solvent Accessible Surface Area (rep3) ----
+surf :1-165 out structural/surf_rep3.dat
+
+run
+
+quit

@@ -1,0 +1,22 @@
+#!/bin/bash
+#PBS -N cpptraj_analysis
+#PBS -l select=1:ncpus=1:mem=8gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -o cpptraj_analysis.log
+
+cd $PBS_O_WORKDIR
+module load Amber
+
+# Create output directories if they don't already exist
+mkdir -p structural
+mkdir -p pca
+
+# Analysis 1: RMSD + RMSF -> structural/
+cpptraj -i analysis_1.in
+
+# Analysis 2: Radius of Gyration + SASA -> structural/
+cpptraj -i analysis_2.in
+
+# Analysis 3: PCA -> pca/
+cpptraj -i pca.in
