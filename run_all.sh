@@ -2,6 +2,7 @@
 # Run the entire GaMD Pipeline for a user specified molecule
 
 # Step 0: Audit the input PDB file for missing atoms and residues
+python3 0_audit_struct/get_pdb.py $1
 python3 0_audit_struct/audit_pdb.py $1
 
 # Step 1: Prepare the system structure and topology files

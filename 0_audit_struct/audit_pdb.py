@@ -3,7 +3,7 @@
 import math, sys
 from collections import OrderedDict, Counter
  
-PDB = sys.argv[1]
+PDB = "alphafold_raw.pdb"
 STD = set("ALA ARG ASN ASP CYS GLN GLU GLY HIS ILE LEU LYS MET PHE PRO SER THR TRP TYR VAL".split())
  
 atoms = []

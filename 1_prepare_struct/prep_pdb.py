@@ -6,8 +6,8 @@ Strip all hydrogens and heteroatoms (tleap rebuilds them with correct ff naming)
 """
 import sys
 
-SRC = sys.argv[1]
-OUT = sys.argv[2]
+SRC = "../0_audit_struct/alphafold_raw.pdb"
+OUT = sys.argv[1]
 
 out, serial = [], 0
 with open(SRC) as fh:
