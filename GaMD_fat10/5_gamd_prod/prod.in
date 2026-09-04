@@ -19,8 +19,8 @@ GaMD production simulation (post-preparation)
     ntb=2,         ! periodic boundary, constant pressure
     tol=0.000001
     ! Control how often information is printed
-    ntpr=25000,    ! matched to cMD
-    ntwx=2500,     ! matched to cMD
+    ntpr=10000,    ! matched to cMD
+    ntwx=10000,     ! matched to cMD
     ntwr=250000,   ! matched to cMD
 !   ntwv=-1,       ! Uncomment to also print velocities to trajectory
 !   ntwf=-1,       ! Uncomment to also print forces to trajectory

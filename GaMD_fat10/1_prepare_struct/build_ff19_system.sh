@@ -8,7 +8,7 @@ module load Amber
 cat > pass1.leap <<'EOF'
 source leaprc.protein.ff19SB
 source leaprc.water.opc
-mol = loadpdb fat10_clean.pdb
+mol = loadpdb complex_dry.pdb
 charge mol
 solvateOct mol OPCBOX 12.0
 savepdb mol pass1.pdb
