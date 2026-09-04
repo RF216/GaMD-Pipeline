@@ -1,2 +1,2 @@
-# Molecular-Dynamics-of-FAT10-USE1-Complex
-Repository and files used to run GaMD simulations of the FAT10-USE1 complex
+# Gaussian Accelerated Molecular Dynamics Pipeline
+Repository and files used to run GaMD simulations. Specifically, used to run GaMD of FAT10.
