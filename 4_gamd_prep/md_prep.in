@@ -1,0 +1,46 @@
+GaMD simulation
+ &cntrl
+    imin=0,        ! No minimization
+    irest=0,       ! This IS a new MD simulation
+    ntx=1,         ! read coordinates only
+    ! Temperature control
+    ntt=3,         ! Langevin dynamics
+    gamma_ln=2.0,  ! Friction coefficient (ps^-1) - matched to cMD
+    tempi=310.0,   ! Initial temperature
+    temp0=310.0,   ! Target temperature
+    ig=-1,         ! random seed
+    ! Potential energy control
+    cut=10.0,      ! nonbonded cutoff, in Angstroms - matched to cMD
+    ! MD settings
+    nstlim=12500000, ! ~50 ns at dt=0.004
+    dt=0.004,      ! time step (ps) - matched to cMD (HMR)
+    ! SHAKE
+    ntc=2,         ! Constrain bonds containing hydrogen
+    ntf=2,         ! Do not calculate forces of bonds containing hydrogen
+    ntb=2,         ! periodic boundary, constant pressure - added to match cMD
+    tol=0.000001
+    ! Control how often information is printed
+    ntpr=25000,    ! matched to cMD
+    ntwx=2500,     ! matched to cMD
+    ntwr=250000,   ! matched to cMD
+!   ntwv=-1,       ! Uncomment to also print velocities to trajectory
+!   ntwf=-1,       ! Uncomment to also print forces to trajectory
+    ntxo=2,        ! Write NetCDF format
+    ioutfm=1,      ! Write NetCDF format (always do this!)
+    ! Wrap coordinates when printing them to the same unit cell
+    iwrap=1,
+    ntwprt=2642,   ! matched to cMD
+    ntr=0,         ! matched to cMD (no restraints)
+    ! Constant pressure control
+    barostat=2,    ! Monte Carlo barostat - fixed to match cMD (was mislabeled)
+    ntp=1,         ! isotropic
+    pres0=1.0,     ! Target external pressure, in bar
+    ! GaMD parameters
+    igamd=3, iE=1, irest_gamd=0,
+    ntcmdprep=500000,  ! 2 ns
+    ntcmd=2500000,     ! 10 ns
+    ntebprep=500000,   ! 2 ns
+    nteb=5000000,      ! 20 ns
+    ntave=100000,      ! 400 ps averaging window
+    sigma0P=6.0, sigma0D=6.0,
+ /

@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -N 3_initial_cmd
+#PBS -o prod.out
+#PBS -e prod.err
+#PBS -l select=1:ncpus=4:mem=16gb:ngpus=1
+#PBS -l walltime=15:00:00
+
+cd $PBS_O_WORKDIR
+
+module load Amber
+
+# cMD run for 50ns
+chmod +x run_cmd.sh
+./run_cmd.sh
